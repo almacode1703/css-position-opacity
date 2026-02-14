@@ -14,12 +14,22 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            padding: 1rem;
+            padding: 20px;
             border: 2px solid green;
         }
 
         div.spacer {
             height: 2000px;
+        }
+
+        div.sticky{
+            background-color: magenta;
+            position: sticky;
+            top:100px;
+            padding: 20px;
+            height:50px;
+            max-width: fit-content;
+            border: 2px solid brown;
         }
     </style>
 
@@ -30,6 +40,12 @@
     <h1>CSS Positioning</h1>
 
     <div class="fixed"> Fixed Position</div>
+
+    
+    <div class="spacer"></div>
+
+
+    <div class="sticky">I will stick to somewhere near the top</div>
 
     <div class="spacer"></div>
 
