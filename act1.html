@@ -22,12 +22,12 @@
             height: 2000px;
         }
 
-        div.sticky{
+        div.sticky {
             background-color: magenta;
             position: sticky;
-            top:100px;
+            top: 100px;
             padding: 20px;
-            height:50px;
+            height: 50px;
             max-width: fit-content;
             border: 2px solid brown;
         }
@@ -36,16 +36,31 @@
             width: 120px;
             height: 120px;
             color: lightgray;
-            display:flex;
+            display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
         }
-        .relative{
+
+        .relative {
             background-color: blue;
             position: relative;
             left: 40px;
             right: 40px;
+        }
+
+        .parent {
+            position: relative;
+            height: 200px;
+            border: 2px dotted black;
+            margin-top: 50px;
+        }
+
+        .absolute {
+            background-color: red;
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
 
         }
     </style>
@@ -59,7 +74,11 @@
     <div class="fixed"> Fixed Position</div>
 
     <div class="box relative">Relative</div>
-    
+
+    <div class="parent">
+        <div class="box absolute">Absolute</div>
+    </div>
+
     <div class="spacer"></div>
 
 
